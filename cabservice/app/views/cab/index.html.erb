@@ -1,0 +1,50 @@
+ <div class="col-sm-8 text-left center"> 
+      <h1>Welcome to Fuber</h1>
+      <p>Now book a cab near to you with no hassle.</p>
+             
+     <%= form_tag :action => 'book', :class=>'form-inline' ,:method=>'post' do %>  
+        <div class="row">
+	        <div class="col-sm-3">
+	          <div class="well innerdivleft">
+	           PICK UP
+	          </div>
+	        </div>
+	        <div class="col-sm-9">
+	          <div class="well innerdivright">
+	            <%= text_field_tag :pick_up, params[:pick_up], size:50,placeholder:"Eg. Kormangla,Bangalore",class:"form-control search-bar" %>
+	          </div>
+	        </div>
+        </div> 
+
+         <div class="row">
+	        <div class="col-sm-3">
+	          <div class="well innerdivleft">
+	           Drop Point
+	          </div>
+	        </div>
+	        <div class="col-sm-9">
+	          <div class="well innerdivright">
+	            <%= text_field_tag :drop_point, params[:drop_point], size:50,placeholder:"Eg. Whitefield,Bangalore",class:"form-control search-bar" %>
+	          </div>
+	        </div>
+        </div> 
+
+        <div class="row">
+	        <div class="col-sm-3">
+	          <div class="well innerdivleft">
+	           TYPE
+	          </div>
+	        </div>
+	        <div class="col-sm-9">
+	          <div class="well innerdivright">
+	           <%= text_field_tag :type, params[:type], size:50,placeholder:"Pink or Normal",class:"form-control search-bar" %>
+	          </div>
+	        </div>
+        </div> 
+        <div class="span6 offset1">
+            <%= submit_tag "Search", :class => "btn-primary btn btn-metric-current" ,:name => nil %>
+           </div>
+
+      <% end %> 
+</div>
+

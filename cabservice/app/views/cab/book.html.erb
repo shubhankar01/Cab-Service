@@ -1,0 +1,38 @@
+<div style="margin-bottom:300px;">
+
+
+	<% if @list==0 %>
+       <div class="col-sm-9">
+	          <div class="well message-error">
+	            We are still not operating in this pick-up area.Please try some other location.
+	          </div>
+	    </div>
+
+    <% elsif @list==1 %>
+        <div class="col-sm-9">
+	          <div class="well message-error">
+	            We are still not operating in this drop-point area.Please try some other location.
+	          </div>
+	    </div>
+        
+    <% elsif @list ==2 %>
+        <div class="col-sm-9">
+	          <div class="well message-error">
+	            No Cabs are available right now. Please try later.
+	          </div>
+	    </div>
+    <%else %>
+        <div class="well message-success">
+        <b>Your Booking is Succesfull !</b>
+         <br/>
+         <p>Cab Driver : <%= @list.driver %></p>
+         <p>Cab Number: <%= @list.number %></p>
+         <p>Cab Model : <%= @list.model %></p>
+     </div>
+	<% end %>
+
+
+
+
+
+</div>

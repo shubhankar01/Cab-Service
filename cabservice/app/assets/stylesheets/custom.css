@@ -1,0 +1,39 @@
+.center{
+	margin-left: 238px;
+    margin-top: 77px;
+    padding: 0px;
+}
+.innerdivright{
+	background-color: #FFF;
+width: 904px;
+margin-left: -152px;
+border: none;
+}
+.innerdivleft{
+	    background-color: #FFF;
+    font-weight: bold;
+    border: none;
+    font-size: 21px;
+    margin-left: -23px;
+
+
+}
+#flash_notice{
+	margin-top: 70px;
+	color: #ff4d4d;
+
+text-align: center;
+font-size: 17px;
+
+}
+.message-error{
+	    margin-top: -109px;
+    margin-left: 321px;
+
+}
+.message-success{
+	   margin-top: 163px;
+margin-left: 395px;
+margin-right: 350px;
+
+}

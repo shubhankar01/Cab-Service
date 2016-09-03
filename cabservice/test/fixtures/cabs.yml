@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  number: MyString
+  driver: MyText
+  type: 
+
+two:
+  number: MyString
+  driver: MyText
+  type: 
